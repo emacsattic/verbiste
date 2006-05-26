@@ -1,6 +1,6 @@
 ;;; verbiste.el --- Emacs interface to dict client
 ;;
-;; $Id: verbiste.el 2 2006-01-30 22:38:09Z intrigeri $
+;; $Id: verbiste.el 3 2006-05-26 16:36:41Z intrigeri $
 ;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
@@ -201,7 +201,8 @@ This guess is based on the text surrounding the cursor."
     result))
 
 (defun verbiste-process-key-binding (string)
-  "Process a STRING representing a key binding to allow easy key binding customisation."
+  "Process a STRING representing a key binding to allow easy key
+  binding customisation."
   (read (concat "\"" string "\"")))
 
 (defvar verbiste-mode-keymap (make-sparse-keymap))
@@ -251,7 +252,7 @@ This guess is based on the text surrounding the cursor."
   (shell-command "french-conjugator --version"))
 
 (defconst verbiste-version
-  "$Rev: 2 $"
+  "$Rev: 3 $"
   "Version number for 'verbiste' package.")
 
 (defun verbiste-version-number ()
