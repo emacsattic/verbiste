@@ -1,6 +1,6 @@
 ;;; verbiste.el --- Emacs interface to dict client
 ;;
-;; $Id: verbiste.el 3 2006-05-26 16:36:41Z intrigeri $
+;; $Id: verbiste.el 4 2006-07-31 19:42:42Z intrigeri $
 ;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
@@ -133,7 +133,7 @@ If DECONJ is non-nil, deconjugate instead"
     (set-process-sentinel
      (start-process "verbiste" buffer "sh" "-c"
 		    (format "%s %s"
-			    (if deconj "french-deconjugator" "french-conjugator")
+			    (if deconj "french-deconjugator" "french-conjugator -p")
 			    (verbiste-quote word)))
      'verbiste-bgproc-sentinel)))
 
@@ -252,7 +252,7 @@ This guess is based on the text surrounding the cursor."
   (shell-command "french-conjugator --version"))
 
 (defconst verbiste-version
-  "$Rev: 3 $"
+  "$Rev: 4 $"
   "Version number for 'verbiste' package.")
 
 (defun verbiste-version-number ()
