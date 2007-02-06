@@ -1,6 +1,6 @@
-;;; verbiste.el --- Emacs interface to dict client
+;;; verbiste.el --- Emacs interface to verbiste
 ;;
-;; $Id: verbiste.el 4 2006-07-31 19:42:42Z intrigeri $
+;; $Id: verbiste.el 5 2007-02-06 13:18:51Z intrigeri $
 ;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
@@ -252,7 +252,7 @@ This guess is based on the text surrounding the cursor."
   (shell-command "french-conjugator --version"))
 
 (defconst verbiste-version
-  "$Rev: 4 $"
+  "$Rev: 5 $"
   "Version number for 'verbiste' package.")
 
 (defun verbiste-version-number ()
