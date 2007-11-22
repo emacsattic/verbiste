@@ -1,12 +1,12 @@
 ;;; verbiste.el --- Emacs interface to verbiste
 ;;
-;; $Id: verbiste.el 5 2007-02-06 13:18:51Z intrigeri $
+;; $Id: verbiste.el 6 2007-11-22 18:53:55Z intrigeri $
 ;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
 
 ;; Copyright (c) 2002, 2003 Max Vasin
-;; Copyright (c) 2006 by Ben Voui <intrigeri@boum.org>
+;; Copyright (c) 2006, 2007 by Ben Voui <intrigeri@boum.org>
 ;;
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -252,7 +252,7 @@ This guess is based on the text surrounding the cursor."
   (shell-command "french-conjugator --version"))
 
 (defconst verbiste-version
-  "$Rev: 5 $"
+  "$Rev: 6 $"
   "Version number for 'verbiste' package.")
 
 (defun verbiste-version-number ()
