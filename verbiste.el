@@ -1,6 +1,6 @@
 ;;; verbiste.el --- Emacs interface to verbiste
 ;;
-;; $Id: verbiste.el 6 2007-11-22 18:53:55Z intrigeri $
+;; $Id: verbiste.el 7 2008-02-25 12:33:48Z intrigeri $
 ;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
@@ -96,9 +96,9 @@ the results in the Emacs buffer."
   :set 'verbiste-mode-set-key-binding
   :require 'verbiste)
 
-(defcustom verbiste-buffer-coding-system 'latin-1
+(defcustom verbiste-buffer-coding-system 'utf-8
   "Specifies coding system to use in verbiste buffer.
-At least until Versite 0.1.10, only latin-1 is supported."
+Depending on your Emacs version and locales settings, you may want to change this, e.g. for 'latin-1"
   :tag "Input coding system for Verbiste buffer"
   :type 'sexp
   :group 'Verbiste-Mode)
@@ -252,7 +252,7 @@ This guess is based on the text surrounding the cursor."
   (shell-command "french-conjugator --version"))
 
 (defconst verbiste-version
-  "$Rev: 6 $"
+  "$Rev: 7 $"
   "Version number for 'verbiste' package.")
 
 (defun verbiste-version-number ()
