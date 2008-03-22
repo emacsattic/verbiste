@@ -1,12 +1,11 @@
 ;;; verbiste.el --- Emacs interface to verbiste
 ;;
-;; $Id: verbiste.el 7 2008-02-25 12:33:48Z intrigeri $
-;; $URL: https://intrigeri.boum.org/svn/pub/verbiste/verbiste.el $
+;; URL: https://gaffer.boum.org/darcs/pub/verbiste-el
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
 
 ;; Copyright (c) 2002, 2003 Max Vasin
-;; Copyright (c) 2006, 2007 by Ben Voui <intrigeri@boum.org>
+;; Copyright (c) 2006, 2007, 2008 by Ben Voui <intrigeri@boum.org>
 ;;
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
