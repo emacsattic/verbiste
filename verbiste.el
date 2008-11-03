@@ -1,6 +1,6 @@
 ;;; verbiste.el --- Emacs interface to verbiste
 ;;
-;; darcs get --partial https://gaffer.boum.org/darcs/pub/verbiste-el
+;; git clone git://gaffer.ptitcanardnoir.org/verbiste-el.git
 ;; Heavily inspired from dict.el, by Max Vasin.
 ;;
 
